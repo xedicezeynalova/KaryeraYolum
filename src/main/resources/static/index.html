@@ -1,0 +1,259 @@
+
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#10172d">
+    <meta name="description" content="KaryeraYolum — AI ilə fərdi karyera məsləhəti, ixtisaslar, mentorlar və inkişaf planı.">
+    <title>KaryeraYolum | Gələcəyini kəşf et</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/app.js" defer></script>
+    <script src="/js/career-advice.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+    <div class="nav-container">
+        <a class="brand" href="/" aria-label="KaryeraYolum ana səhifə">
+            <span class="brand-icon">K</span>
+            <span>Karyera<span class="brand-accent">Yolum</span></span>
+        </a>
+
+        <nav class="main-nav" aria-label="Əsas menyu">
+            <a href="#career">AI məsləhətçi</a>
+            <a href="#majors">İxtisaslar</a>
+            <a href="#mentors">Mentorlar</a>
+            <a href="#articles">Məqalələr</a>
+            <a href="#events">Görüşlər</a>
+        </nav>
+
+        <a class="nav-cta" href="#career">Karyeranı planla <span>↗</span></a>
+    </div>
+</header>
+
+<main>
+    <section class="hero">
+        <div class="hero-glow"></div>
+        <div class="hero-content">
+            <div class="eyebrow">
+                <span class="live-dot"></span>
+                SƏNİN ŞƏXSİ KARYERA BƏLƏDÇİN
+            </div>
+
+            <h1>Gələcəyini təsadüfə yox,<br>
+                <span>öz potensialına</span> əsasən qur.
+            </h1>
+
+            <p class="hero-description">
+                Maraqlarını, bacarıqlarını və hədəflərini paylaş.
+                Süni intellekt sənə uyğun ixtisasları və inkişaf yolunu
+                müəyyənləşdirməyə kömək etsin.
+            </p>
+
+            <div class="hero-actions">
+                <a class="primary-button" href="#career">
+                    AI ilə karyera planı hazırla <span>→</span>
+                </a>
+                <a class="secondary-button" href="#majors">İxtisasları araşdır</a>
+            </div>
+
+            <div class="hero-features">
+                <div><span class="feature-icon">✦</span><span>Fərdi tövsiyələr</span></div>
+                <div><span class="feature-icon">◈</span><span>Praktik inkişaf planı</span></div>
+                <div><span class="feature-icon">↗</span><span>Azərbaycan dilində</span></div>
+            </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+            <div class="orbit orbit-one"></div>
+            <div class="orbit orbit-two"></div>
+            <div class="visual-core">
+                <span class="core-star">✦</span>
+                <span class="core-label">YOUR FUTURE</span>
+                <strong>01 → ∞</strong>
+            </div>
+            <div class="floating-card floating-top">
+                <span class="float-icon purple">✦</span>
+                <div><strong>AI karyera analizi</strong><small>Sənə uyğun istiqamət</small></div>
+            </div>
+            <div class="floating-card floating-bottom">
+                <span class="float-icon green">↗</span>
+                <div><strong>İnkişaf planı</strong><small>Növbəti addımını müəyyən et</small></div>
+            </div>
+            <div class="visual-pill">Potensialını kəşf et</div>
+        </div>
+    </section>
+
+    <section class="career-section section-wrap" id="career">
+        <div class="section-heading">
+            <span class="section-kicker">✦ AI CAREER STUDIO</span>
+            <h2>Sənin üçün doğru karyera yolunu kəşf et</h2>
+            <p>Məlumatlarını daxil et, fərdi karyera tövsiyəni əldə et.</p>
+        </div>
+
+        <div class="career-layout">
+            <form id="career-advice-form" class="career-form">
+                <div class="form-heading">
+                    <div>
+                        <span class="form-step">01 / MƏLUMATLAR</span>
+                        <h3>Səni daha yaxından tanıyaq</h3>
+                        <p>Nə qədər konkret yazsan, tövsiyələr bir o qədər faydalı olar.</p>
+                    </div>
+                    <div class="form-heading-icon">✎</div>
+                </div>
+
+                <div class="field-group">
+                    <label for="interests">Maraqların <span>*</span></label>
+                    <textarea id="interests" name="interests" rows="3"
+                              placeholder="Məsələn: texnologiya, dizayn, insanlarla ünsiyyət..."
+                              maxlength="1500" required></textarea>
+                    <small>Səni həvəsləndirən fəaliyyətləri yaz.</small>
+                </div>
+
+                <div class="field-group">
+                    <label for="favoriteSubjects">Sevdiyin fənlər <span>*</span></label>
+                    <input id="favoriteSubjects" name="favoriteSubjects" type="text"
+                           placeholder="Məsələn: riyaziyyat, informatika, biologiya..."
+                           maxlength="500" required>
+                </div>
+
+                <div class="field-group">
+                    <label for="skills">Bacarıqların</label>
+                    <textarea id="skills" name="skills" rows="3"
+                              placeholder="Məsələn: ünsiyyət, məntiqi düşünmə, Java üzrə ilkin biliklər..."
+                              maxlength="1500"></textarea>
+                    <small>Hələ bilmədiyin bacarıqları yazmaq məcburi deyil.</small>
+                </div>
+
+                <div class="field-group">
+                    <label for="goals">Karyera məqsədlərin <span>*</span></label>
+                    <textarea id="goals" name="goals" rows="3"
+                              placeholder="Məsələn: proqramçı olmaq, xaricdə təhsil almaq..."
+                              maxlength="1500" required></textarea>
+                </div>
+
+                <div class="privacy-note">
+                    <span>🔒</span>
+                    <p>Məlumatların yalnız karyera tövsiyəsinin hazırlanması üçün istifadə olunur.</p>
+                </div>
+
+                <button class="primary-button submit-button" id="advice-submit" type="submit">
+                    <span class="button-label">✦ AI ilə karyera planımı hazırla</span>
+                    <span class="button-arrow">→</span>
+                </button>
+
+                <p class="form-footnote">AI tövsiyələri istiqamət verir; yekun seçim sənindir.</p>
+            </form>
+
+            <section class="results-panel" aria-labelledby="results-title">
+                <div class="results-topline">
+                    <div>
+                        <span class="section-kicker">02 / SƏNİN NƏTİCƏN</span>
+                        <h3 id="results-title">Karyera tövsiyən</h3>
+                    </div>
+                    <span class="ai-badge"><span>✦</span> AI ANALİZİ</span>
+                </div>
+
+                <div id="advice-empty" class="empty-state">
+                    <div class="empty-illustration">
+                        <div class="empty-orbit"></div>
+                        <span>✦</span>
+                    </div>
+                    <h4>Karyera yolun burada başlayır</h4>
+                    <p>Formanı doldur və AI-nın sənə uyğun ixtisasları, inkişaf addımlarını və yekun tövsiyəsini hazırlamasını gözlə.</p>
+                    <div class="empty-steps">
+                        <div><span>01</span> Məlumatlarını yaz</div>
+                        <div><span>02</span> AI analiz etsin</div>
+                        <div><span>03</span> Yol xəritəni kəşf et</div>
+                    </div>
+                </div>
+
+                <div id="advice-loading" class="loading-state" hidden>
+                    <div class="loader"></div>
+                    <h4>Karyera yolun hazırlanır...</h4>
+                    <p>AI maraqlarını və məqsədlərini təhlil edir. Bu, modeldən asılı olaraq bir qədər vaxt apara bilər.</p>
+                    <div class="loading-bar"><span></span></div>
+                </div>
+
+                <div id="advice-error" class="error-box" role="alert" hidden></div>
+
+                <div id="advice-results" class="advice-results" aria-live="polite" hidden>
+                    <div class="result-success">
+                        <span>✓</span>
+                        <div><strong>Analiz tamamlandı</strong><small>Tövsiyələrin aşağıdadır.</small></div>
+                        <button type="button" id="copy-advice" class="copy-button">Mətni köçür</button>
+                    </div>
+                    <div id="advice-cards" class="advice-cards"></div>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <section class="catalog-section section-wrap" id="majors">
+        <div class="section-heading heading-row">
+            <div>
+                <span class="section-kicker">İXTİSAS BƏLƏDÇİSİ</span>
+                <h2>Gələcəyini quracağın sahəni seç</h2>
+                <p>İxtisasları araşdır və maraqlarına uyğun istiqaməti tap.</p>
+            </div>
+            <span class="count-pill" id="majors-count">İxtisaslar yüklənir...</span>
+        </div>
+        <div class="search-box">
+            <span>⌕</span>
+            <input id="major-search" type="search" placeholder="İxtisas, sahə və ya bacarıq axtar...">
+        </div>
+        <div class="data-grid" id="majors-list">
+            <p class="status-message">İxtisaslar yüklənir...</p>
+        </div>
+    </section>
+
+    <section class="catalog-section alternate-section" id="mentors">
+        <div class="section-wrap">
+            <div class="section-heading">
+                <span class="section-kicker">SƏNƏ DƏSTƏK OLANLAR</span>
+                <h2>Təcrübədən öyrən</h2>
+                <p>Karyera yolunda sənə istiqamət verə biləcək mentorlarla tanış ol.</p>
+            </div>
+            <div class="data-grid" id="mentors-list">
+                <p class="status-message">Mentorlar yüklənir...</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="catalog-section section-wrap" id="articles">
+        <div class="section-heading">
+            <span class="section-kicker">BİLİK VƏ İNKİŞAF</span>
+            <h2>Növbəti addımın üçün öyrən</h2>
+            <p>Karyera inkişafına kömək edən faydalı materiallar.</p>
+        </div>
+        <div class="data-grid" id="articles-list">
+            <p class="status-message">Məqalələr yüklənir...</p>
+        </div>
+    </section>
+
+    <section class="catalog-section alternate-section" id="events">
+        <div class="section-wrap">
+            <div class="section-heading">
+                <span class="section-kicker">İCMAYA QOŞUL</span>
+                <h2>Öyrən, tanış ol, inkişaf et</h2>
+                <p>Karyera görüşlərini və inkişaf tədbirlərini izləy.</p>
+            </div>
+            <div class="data-grid" id="events-list">
+                <p class="status-message">Görüşlər yüklənir...</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="footer-inner">
+        <a class="brand footer-brand" href="/">
+            <span class="brand-icon">K</span>
+            <span>Karyera<span class="brand-accent">Yolum</span></span>
+        </a>
+        <p>Gələcəyini kəşf et. Öz yolunu qur.</p>
+        <span>© <span id="current-year"></span> KaryeraYolum</span>
+    </div>
+</footer>
+</body>
+</html>
